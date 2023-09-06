@@ -1,7 +1,7 @@
+#CARLOS MICHELL CALDERON PINA 20120086
 import cv2 as cv
 import numpy as np
 
-# Abre la cámara. Si tienes varias cámaras, puedes cambiar el índice.
 cap = cv.VideoCapture('Users\carlo\Documents\TEC\Semestre 8\Inteligencia Artificial\Identificar_coordenadasRY\tr.png')
 
 while True:
@@ -25,7 +25,6 @@ while True:
 
     if cv.waitKey(1) == ord('q'):
         break
-
-# Libera la cámara y destruye todas las ventanas al salir del bucle
+        
 cap.release()
 cv.destroyAllWindows()
