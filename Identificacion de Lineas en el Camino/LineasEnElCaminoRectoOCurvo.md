@@ -2,4 +2,4 @@
 
 <div style="text-align: justify"> <p>Mediante el uso de escalamiento de grises, y de los operadores puntuales se puede lograr que solo se vea las líneas blancas de la carretera, limpiando todo el entorno, sin que identifique otra cosa que no sean las líneas del camino.</p></div>
 
-<div style="text-align: justify"> <p>Para la resolución de este problema, podríamos comenzar a programar en Python</p></div>
+<div style="text-align: justify"> <p>Para la resolución de este problema, podríamos comenzar a programar en Python, empezando por la escalacion de grises, para esto nos ayuda la segmentacion de color, identificamos el color blanco y tal vez despues ir depurando el entorno...</p></div>
