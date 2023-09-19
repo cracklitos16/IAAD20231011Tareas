@@ -1,16 +1,15 @@
-# <h1>Estrategias para poder ganar en el juego del gato 3D.</h1> #
- 
-<p> Como primer punto es importante mencionar que si fuera en 2D seria mucho mas sencillo claro, entonces consideramos que en ese juego se tiene un matriz de 3X3 en la cual se deben de colocar una Cruz ó un Circulo segun el jugador eliga, por consecuente conforme se vayan llenando los espacios y sise realiza una linea horizontal, versical o diagonal en la matriz el jugador con el simbolo que lo haya logrado gana..... Entonces al menos para este caso se tienen estas posibles estragias:  
+# <h1>Estrategias para poder ganar en el juego de los Monjes Vs Canibales </h1> #
+<p> Como primer paso pienso que es importante saber como funciona el juego, asi como sus reglas. 
 
-<p> 1.- Tener el  primer turno. <br>
-2.- Empezar colocando tu X ó O en el  centro, esto si se tiene el primer turno, en dado caso de si tenerlo de preferencia siepre empezar en el centro.<br>
-3.- Siempre tratar de bloquear las posible amenzas, si ya el jugador contrario tiene dos de sus simbolos tienes que inmendiatamente si no en su turno tendra la oportunidad de colocar el ultimo simbolo (Ya sea Cruz o Circulo) para ganar<p>
-<b>Es importante decir que claramente eso se haria si fuera en el Gato 2D </b>
+<h4> Reglas: </h4> 
 
-<h4>Estrategias para el Gato 3D.</h4>
+<p> Hay tres monjes y tres caníbales en un lado del río, junto con un bote que puede llevar como máximo dos personas (ya sea dos monjes, dos caníbales o un monje y un caníbal). El objetivo es llevar a todos los monjes y caníbales al otro lado del río sin dejar que los caníbales superen en número a los monjes en ningún lado del río en ningún momento. En otras palabras, nunca debe haber más caníbales que monjes en un lado del río. 
 
-* Tira primero colocando como primer movimiento al centro. 
-* Si estuviera ocupado, o que no fueras el primero en tirar al centro entonces siempre usa las esquinas.
-* Siempre bloquear las amenazas del jugador contrario. 
-* NO jugar de formas predecibles, crea juegos a futuro. 
-* Por crear juegos a futuro se podria decir que que los dejes a media para que se vayan creando las oportunidades necesarias, y asi en dado caso ganar de alguna u otra forma. 
+El bote no puede cruzar el río vacío. Siempre debe haber al menos una persona (monje o caníbal) en el bote cuando cruce el río.
+
+El juego se juega por turnos, y los monjes y caníbales deben tomar decisiones estratégicas para cruzar el río de manera segura y evitar violar la regla de no dejar que los caníbales superen en número a los monjes. </p>
+
+
+<h4> Objetivo: </h4> 
+
+<p> El objetivo del juego es llevar a los tres monjes y tres caníbales al otro lado del río, sin romper las reglas. </p>
