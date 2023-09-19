@@ -34,5 +34,5 @@ El granjero cruza de regreso al lado original del río, esta vez con el Pollo. A
 <h3>5.-Lleva la Lechuga al otro lado: </h3>
 <div style="text-align: justify"> 
 Finalmente, el granjero cruza la Lechuga al otro lado del río, dejando al Pollo en el lado opuesto. 
-
-Ahora todas las cargas (el Granjero, el Coyote, el Pollo y la Lechuga) están en el lado opuesto del río </div>
+</div>
+# Ahora todas las cargas (el Granjero, el Coyote, el Pollo y la Lechuga) están en el lado opuesto del río. # 
