@@ -11,7 +11,7 @@ El juego se juega por turnos, y los monjes y caníbales deben tomar decisiones e
 
 
 
-<div style="text-align: right"> Hay tres monjes y tres caníbales en un lado del río, junto con un bote que puede llevar como máximo dos personas (ya sea dos monjes, dos caníbales o un monje y un caníbal). El objetivo es llevar a todos los monjes y caníbales al otro lado del río sin dejar que los caníbales superen en número a los monjes en ningún lado del río en ningún momento. En otras palabras, nunca debe haber más caníbales que monjes en un lado del río. 
+<div style="text-align: justify"> Hay tres monjes y tres caníbales en un lado del río, junto con un bote que puede llevar como máximo dos personas (ya sea dos monjes, dos caníbales o un monje y un caníbal). El objetivo es llevar a todos los monjes y caníbales al otro lado del río sin dejar que los caníbales superen en número a los monjes en ningún lado del río en ningún momento. En otras palabras, nunca debe haber más caníbales que monjes en un lado del río. 
 
 El bote no puede cruzar el río vacío. Siempre debe haber al menos una persona (monje o caníbal) en el bote cuando cruce el río.
 
