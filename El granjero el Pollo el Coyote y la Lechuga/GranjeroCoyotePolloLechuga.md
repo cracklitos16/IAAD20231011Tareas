@@ -14,24 +14,25 @@ El <strong> objetivo </strong> del juego es encontrar una secuencia de movimient
 
 <h2> Estrategia para ganar el juego. </h2>
 
-<div style="text-align: justify"> <h3> 1.- Lleva primero al Pollo al otro lado: </h3>
+<h3> 1.- Lleva primero al Pollo al otro lado: </h3>
 
+<div style="text-align: justify"> 
 El granjero cruza al Pollo al otro lado del río, dejando al Coyote y la Lechuga en el lado original. Esto asegura que el Pollo no se coma la Lechuga mientras el granjero no está presente.
-
+</div>
 <h3> 2.- Regresa solo al lado original: </h3> 
-
+<div style="text-align: justify"> 
 El granjero cruza de regreso solo al lado original del río, dejando al Pollo en el lado opuesto. Ahora el granjero está en el lado original con el Coyote y la Lechuga.
-
+</div>
 <h3>3.- Lleva al Coyote al otro lado: </h3>
-
+<div style="text-align: justify"> 
 El granjero cruza al Coyote al otro lado del río, dejando la Lechuga en el lado original. Esto es seguro porque el Pollo no está presente en este lado.
-
+</div>
 <h3>4.- Regresa con el Pollo al lado original: </h3>
-
+<div style="text-align: justify"> 
 El granjero cruza de regreso al lado original del río, esta vez con el Pollo. Ahora el granjero está en el lado original con el Pollo y la Lechuga.
-
+</div>
 <h3>5.-Lleva la Lechuga al otro lado: </h3>
-
+<div style="text-align: justify"> 
 Finalmente, el granjero cruza la Lechuga al otro lado del río, dejando al Pollo en el lado opuesto. 
 
 Ahora todas las cargas (el Granjero, el Coyote, el Pollo y la Lechuga) están en el lado opuesto del río </div>
