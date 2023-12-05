@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Deteccion de caras"
+		},
+		{
+			"path": "../Actividad_Gato3D"
+		},
+		{
+			"path": "../Monjes vs Canibales"
+		},
+		{
+			"path": "../El granjero el Pollo el Coyote y la Lechuga"
+		},
+		{
+			"path": "../Identificacion de Lineas en el Camino"
+		},
+		{
+			"path": "../DataSetCaras"
+		},
+		{
+			"path": "../../../Seguridad en Infraestructura Especialidad/Unidad 1/Tarea2CifradoTranspuestoFilaColumna"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tarea2CifradoTranspuestoFilaColumna"
+	}
+}
