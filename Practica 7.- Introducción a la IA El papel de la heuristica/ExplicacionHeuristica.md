@@ -51,4 +51,91 @@ Terminación:
 
 Cuando se llega al nodo de destino, se reconstruye el camino desde el inicio hasta el destino utilizando la información almacenada en los antecesores.
 
-Ahora que sabemos que es y como funciona el algoritmo vamos 
+Ahora que sabemos que es y como funciona el algoritmo vamos a resolver dicho laberinto el cual es el que se muestra en la siguiente imagen.
+
+![Laberinto Inicial](laberinto1.png)
+
+Este laberinto como podemos observar en la posicion (1,0) esta ubicada la entrada y en la (7,0) la salida, por consecuente en base al algoritmo debemos resolverlo, sin embargo se podria decir que a simple vista se puede resolver, entonces ahora en la siguiente imagen se puede apreciar cual es la solucion del laberinto con el costo menor posible, este se puede apreciar con una linea roja.
+
+![Laberinto Inicial](laberinto2.png)
+
+Ahora que se identifico cual es el camino con menos costo vamos a programar una solucion la cual debe tambien considerar las diagonales ya que es un camino valido por el cual tiene un costo menor.
+
+1. Como primer paso vamos a Importar de Bibliotecas necesarias
+
+```Python
+import math
+#  Se usa math para poder utilizar la función sqrt en la heurística.
+```
+
+2. Vamos a definir la función Heurística:
+
+```Python
+def heuristica(a, b):
+    return math.sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
+# Esta función calcula la distancia euclidiana entre dos puntos a y b. En este contexto, se utiliza como una estimación heurística para guiar la búsqueda.
+```
+
+3. Definición de Movimientos y Función A:*
+
+```Python
+movimientos = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)] 
+# Aquí se definen los movimientos posibles (arriba, abajo, izquierda, derecha, diagonales) y la función principal de búsqueda A*.
+
+def a_estrella(laberinto, inicio, fin):
+    # Código de la función... 
+```
+
+4. Inicializamos las variables:
+
+```Python
+cola_prioridad = [(0, inicio)]
+antecesores = {inicio: None}
+g_score = {inicio: 0}
+# Estas variables se utilizan para llevar a cabo el algoritmo A* y realizar un seguimiento de los nodos visitados y sus costos acumulados.
+```
+
+5. Bucle Principal de A:*
+
+```Python
+while cola_prioridad:
+    # Este bucle se ejecuta mientras haya nodos en la cola de prioridad. Cada iteración del bucle extiende la búsqueda hacia el nodo con el menor costo acumulado.
+```
+
+6. Obtención del Camino y Retorno:
+
+```Python
+if actual == fin:
+    camino = [actual]
+    while actual := antecesores[actual]:
+        camino.append(actual)
+    return camino[::-1]
+# Cuando se alcanza el nodo de destino (fin), se reconstruye el camino desde el nodo final hasta el nodo inicial utilizando los antecesores.
+```
+
+7. Exploración de Vecinos y Actualización de Información:
+
+```Python
+for movimiento in movimientos:
+    nueva_posicion = (actual[0] + movimiento[0], actual[1] + movimiento[1])
+    # Se exploran los vecinos del nodo actual, y se actualizan los costos acumulados y antecesores si se encuentra un camino más corto.
+```
+
+8. Se imprimen los resultados:
+
+```Python
+camino_solucion = a_estrella(laberinto, inicio, fin)
+
+if camino_solucion:
+    # Código de impresión...
+else:
+    print("No hay solución.")
+```
+
+#### En conclusión
+
+La resolución de laberintos mediante métodos heurísticos, específicamente el algoritmo A*, realmente es una muy buena herramienta en el ámbito de la inteligencia artificial. La combinación de una función heurística que guía la búsqueda y una estrategia de exploración eficiente, permite encontrar el camino óptimo de manera rápida y precisa.
+
+A* se destaca por su capacidad para encontrar soluciones efectivas en términos de distancia y eficiencia de búsqueda. La heurística, al proporcionar una estimación informada de los costos, permite al algoritmo dirigir sus esfuerzos hacia las áreas más prometedoras del espacio de búsqueda. Este enfoque no solo mejora la velocidad de convergencia, sino que también garantiza soluciones óptimas en muchos casos.
+
+La implementación de A* para la resolución de laberintos no solo ha demostrado ser efectiva, sino también versátil. Puede adaptarse a diferentes configuraciones y dimensiones de laberintos, proporcionando soluciones eficientes incluso en entornos complejos. Además, su capacidad para gestionar obstáculos y encontrar el camino más corto lo convierte en una opción valiosa en aplicaciones prácticas, como la planificación de rutas en logística.
