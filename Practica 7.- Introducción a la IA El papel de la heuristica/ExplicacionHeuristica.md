@@ -1,4 +1,4 @@
-# ¿Que es la Heuristica? Y ¿Como se  podria resolver el problema del laberinto?
+# ¿Que es la Heurística? Y ¿Como se podría resolver el problema del laberinto?
 
 ## Por: Calderón Piña Carlos Michell
 
@@ -10,11 +10,11 @@ Piensa en la heurística como un truco mental que te ayuda a simplificar situaci
 
 Sin embargo, es importante destacar que, aunque las heurísticas pueden ser útiles y eficientes, a veces también pueden llevar a errores porque simplifican la información y pueden no ser aplicables en todas las situaciones. En resumen, la heurística es una herramienta mental que usamos para tomar decisiones más rápidas, pero también debemos ser conscientes de sus limitaciones.
 
-### ¿Cual es su papel en la resolucion de problemas?
+### ¿Cuál es su papel en la resolución de problemas?
 
 Es importante mencionar que, aunque las heurísticas son herramientas valiosas, también tienen limitaciones. Pueden conducir a sesgos y errores cuando se aplican en contextos inapropiados. Por consecuente, es esencial combinar la heurística con el pensamiento crítico y estar consciente de las circunstancias en las que puede ser más o menos efectiva.
 
-Piensemos en las heurísticas como trucos mentales o atajos que te ayudan a resolver problemas más fácilmente. En lugar de perder tiempo revisando todas las opciones y detalles, las heurísticas te permiten tomar decisiones rápidas basadas en reglas prácticas o en tu instinto.
+Pensemos en las heurísticas como trucos mentales o atajos que te ayudan a resolver problemas más fácilmente. En lugar de perder tiempo revisando todas las opciones y detalles, las heurísticas te permiten tomar decisiones rápidas basadas en reglas prácticas o en tu instinto.
 
 Cuando tienes que decidir algo rápido, las heurísticas son como tus superpoderes para tomar decisiones rápidas. Te ayudan a evitar pensar demasiado y te permiten llegar a soluciones aceptables de manera rápida, especialmente cuando el tiempo es importante.
 
@@ -24,7 +24,7 @@ Cuando la información no es clara o no tienes todos los detalles, las heurísti
 
 Además, las heurísticas se basan en tus experiencias y en lo que has aprendido en el pasado. Son como reglas prácticas que desarrollas a medida que enfrentas problemas una y otra vez. Así, te vuelves más rápido y eficiente para resolver situaciones similares.
 
-Bien ahora que sabemos cual es su principal papel podemo descrbir que algoritmo usar. 
+Bien ahora que sabemos cuál es su principal papel podemos describir que algoritmo usar.
 
 ### A*
 
@@ -51,17 +51,17 @@ Terminación:
 
 Cuando se llega al nodo de destino, se reconstruye el camino desde el inicio hasta el destino utilizando la información almacenada en los antecesores.
 
-Ahora que sabemos que es y como funciona el algoritmo vamos a resolver dicho laberinto el cual es el que se muestra en la siguiente imagen.
+Ahora que sabemos que es y cómo funciona el algoritmo vamos a resolver dicho laberinto el cual es el que se muestra en la siguiente imagen.
 
 ![Laberinto Inicial](laberinto1.png)
 
-Este laberinto como podemos observar en la posicion (1,0) esta ubicada la entrada y en la (7,0) la salida, por consecuente en base al algoritmo debemos resolverlo, sin embargo se podria decir que a simple vista se puede resolver, entonces ahora en la siguiente imagen se puede apreciar cual es la solucion del laberinto con el costo menor posible, este se puede apreciar con una linea roja.
+Este laberinto como podemos observar en la posición (1,0) está ubicada la entrada y en la (7,0) la salida, por consecuente en base al algoritmo debemos resolverlo, sin embargo, se podría decir que a simple vista se puede resolver, entonces ahora en la siguiente imagen se puede apreciar cual es la solución del laberinto con el costo menor posible, este se puede apreciar con una línea roja.
 
 ![Laberinto Inicial](laberinto2.png)
 
-Ahora que se identifico cual es el camino con menos costo vamos a programar una solucion la cual debe tambien considerar las diagonales ya que es un camino valido por el cual tiene un costo menor.
+Ahora que se identificó cual es el camino con menos costo vamos a programar una solución la cual debe también considerar las diagonales ya que es un camino valido por el cual tiene un costo menor.
 
-1. Como primer paso vamos a Importar de Bibliotecas necesarias
+1. Como primer paso vamos a Importar de Bibliotecas necesarias.
 
 ```Python
 import math
