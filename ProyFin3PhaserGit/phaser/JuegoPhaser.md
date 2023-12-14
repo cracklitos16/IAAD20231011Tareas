@@ -60,8 +60,8 @@ El disparo, otra parte importante, en el cual vamos a modificar considereablemen
 ```Python
 function disparo() {
   // Velocidades aleatorias para ambas balas
-  velocidadBalaX = -1.3 * velocidadRandom(300, 600);
-  velocidadBalaY = -1.3 * velocidadRandom(300, 400);
+  velocidadBalaX = -1.3 * velocidadRandom(300, 800);
+  velocidadBalaY = -1.3 * velocidadRandom(300, 600);
 
   // Configurar velocidades para ambas balas
   bala.body.velocity.y = 0;
@@ -78,6 +78,6 @@ Si bien aqui podemos cambiar la velocidad de la bala podria ya quedar injugable,
 
 Una vez hayamos hecho dichas modificaciones, podemos empezar a ponerlo a prueba inicialmente con los siguientes valores para el perceptron, el cual incialmente en el phaser original a una bala usa un modelo de multicapa, el cual inicialmente es de (2,6,6,2), e intentaremos hacer pruebas con distintos valores (4,10,10,2) con una capa de entrada de 4 neuronas, dos capas ocultas de 10 neuronas cada una y una capa de salida de 2 neuronas.
 
-La función de activación por defecto para las neuronas en este caso es la función sigmoide.
+__La función de activación por defecto para las neuronas en este caso es la función sigmoide.__
 
-Y la verdad ese modelo, no funciono a parte de que supongo que necesita mas datos de entrenamiento, no termino de funcionar despues de hacer muchisismas pruebas, por consecuente considere quitar una capa oculta, y me quedo asi el perceptron: (4,6,2) reducir el número de capas en nuestra red neuronal puede simplificar el modelo y potencialmente hacer que sea más rápido de entrenar, pero también cabe decir que puede limitar su capacidad para capturar patrones complejos en los datos. Y con esta configuracion podria decir que aprendio rapido pero siemrpre perdia con una bala, no funcionaba bien para la segunda bala, por ende lo unico que se me ocurrio, y que funciono considerablemente mejor a las demas configuraciones es que solo hay que duplicar las neuronas de entradas del perceptron original, entonces nos quedaria de la siguiente manera: (4,6,6,2) 4 nodos de entrada, 2 capas ocultas con 6 nodos cada una, y 2 nodos de salida, los cuales si funcionan correctamente, definido esto podriamos pasar a hacer un poco de modificaciones esteticas las cuales puede ser centrar la pantalla de juego o lienzo, y posteriormente podria mostrar las graficas de resultados.
+Y la verdad ese modelo, no funciono a parte de que supongo que necesita mas datos de entrenamiento, no termino de funcionar despues de hacer muchisismas pruebas, por consecuente considere quitar una capa oculta, y me quedo asi el perceptron: (4,6,2) reducir el número de capas en nuestra red neuronal puede simplificar el modelo y potencialmente hacer que sea más rápido de entrenar, pero también cabe decir que puede limitar su capacidad para capturar patrones complejos en los datos. Y con esta configuracion podria decir que aprendio rapido pero siemrpre perdia con una bala, no funcionaba bien para la segunda bala, por ende lo unico que se me ocurrio, y que funciono considerablemente mejor a las demas configuraciones es que solo hay que duplicar las neuronas de entradas del perceptron original, entonces nos quedaria de la siguiente manera: (4,6,6,2) 4 nodos de entrada, 2 capas ocultas con 6 nodos cada una, y 2 nodos de salida, los cuales si funcionan correctamente, definido esto podriamos pasar a hacer un poco de modificaciones esteticas las cuales puede ser centrar la pantalla de juego o lienzo.
